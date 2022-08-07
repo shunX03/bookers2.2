@@ -7,6 +7,7 @@ before_action :ensure_correct_user, only: [:edit]
   def show
     @book = Book.find(params[:id])
     @books = Book.new
+    @book_comment = BookComment.new
   end
 
   def index
@@ -44,6 +45,8 @@ before_action :ensure_correct_user, only: [:edit]
     book.destroy
     redirect_to books_path
   end
+
+
 
   private
 
