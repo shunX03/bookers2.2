@@ -7,6 +7,11 @@
   <tr>
 	  <th>introduction</th>
 	  <th><%= user.introduction %></th>
+	 </tr>
+	 <tr>
+	  <th>Following: <%= user.follower.count %></th>
+	  <tr>
+    <th>Follower: <%= user.followed.count %></th>
   </tr>
 </table>
 
